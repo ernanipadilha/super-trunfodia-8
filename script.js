@@ -184,10 +184,14 @@ function jogar() {
     alert("Selecione o atributo");
   } else if (valorCartaJogador > valorCartaMaquina) {
     htmlResultado = "<p class='resultado-final'>Você venceu</p>";
+    var audio = new Audio("./src/music/YouWin.mp3")
+    audio.play()
   } else if (valorCartaJogador == valorCartaMaquina) {
     htmlResultado = "<p class='resultado-final'>Empatou</p>";
   } else {
     htmlResultado = "<p class='resultado-final'>Você perdeu</p>";
+    var audio = new Audio("./src/music/YouLose.mp3")
+    audio.play()
   }
   divResultado.innerHTML = htmlResultado;
   document.getElementById("btnJogar").disabled = true;
