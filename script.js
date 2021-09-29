@@ -181,16 +181,12 @@ function jogar() {
   var valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado];
 
   if (atributoSelecionado == undefined) {
-<<<<<<< Updated upstream
-    alert("Selecione o atributo");
-=======
     Swal.fire({
       confirmButtonColor: '#3085d6',
       icon: 'error',
       text: 'Por favor, Selecione o atributo'
     });
 
->>>>>>> Stashed changes
   } else if (valorCartaJogador > valorCartaMaquina) {
     htmlResultado = "<p class='resultado-final'>Você venceu</p>";
     var venceu = new Audio("./src/music/YouWin.mp3")
