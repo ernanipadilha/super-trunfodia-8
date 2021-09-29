@@ -127,28 +127,7 @@ function sortearCarta() {
   }
 
   cartaJogador = cartas[numeroCartaJogador];
-  // var imagem = document.getElementById("imagens");
-  // imagem.innerHTML =
-  //   "<figure>" +
-  //   "<img class='carta-imagem' src=" +
-  //   cartaJogador.imagem +
-  //   ">" +
-  //   "<figcaption>" +
-  //   cartaJogador.nome +
-  //   "<br>" +
-  //   " Ataque: " +
-  //   cartaJogador.atributos.ataque +
-  //   "<br>" +
-  //   " Defesa: " +
-  //   cartaJogador.atributos.defesa +
-  //   "<br>" +
-  //   " Magia: " +
-  //   cartaJogador.atributos.magia +
-  //   "<br>" +
-  //   "</figcaption>" +
-  //   "</figure>";
-
-  document.getElementById("btnSortear").disabled = true;
+   document.getElementById("btnSortear").disabled = true;
   document.getElementById("btnJogar").disabled = false;
   document.getElementById("btnReset").disabled = false;
 
@@ -186,7 +165,6 @@ function jogar() {
       icon: 'error',
       text: 'Por favor, Selecione o atributo'
     });
-
   } else if (valorCartaJogador > valorCartaMaquina) {
     htmlResultado = "<p class='resultado-final'>Você venceu</p>";
     var venceu = new Audio("./src/music/YouWin.mp3")

@@ -125,7 +125,7 @@ form {
   color: #e5f2f3;
 }
 
-#swal2-html-container {
+#swal2-html-container{
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -135,4 +135,5 @@ form {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 30px;
-}
+} 
+
